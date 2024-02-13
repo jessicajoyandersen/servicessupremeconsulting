@@ -16,6 +16,7 @@ header{
 }
 h1{
     color: aliceblue;
+    font-size: 300%;
 }
 
 /* img{          */
@@ -32,7 +33,7 @@ h1{
     justify-content: space-between;
     align-items: flex-end;
 
-    padding-top: 1em;
+    padding-top: 2em;
     padding-bottom: 1em;
     padding-left: .5em;
     padding-right: .5em;
@@ -56,6 +57,7 @@ h1{
     text-align: end;
     border-top: 1em double rgb(119, 125, 211);
     padding-top: 1.5em;
+    font-size: 200%;
 }
 .announcement{
     position: -webkit-sticky;
@@ -71,10 +73,13 @@ h1{
     margin-bottom: .5em;
 
     color: rgb(119, 125, 211);
+    
+    font-size: 2em;
+    padding-bottom: 1.5em;
 }
 .truck{
-    height: 20em;
-    width: 30em;
+    height: 120%;
+    width: 120%;
 
     align-self: flex-end;
 
@@ -111,6 +116,7 @@ h1{
 .displays p{
     text-align: center;
     padding: 1em 0em;
+    font-size: 225%;
 }
 
 .etc{
@@ -120,6 +126,7 @@ h1{
     color: white;
     border-bottom: 1em solid rgb(119, 125, 211);
     padding: 1em 0em;
+    font-size: 200%;
 }
 
 .pitch{
@@ -141,6 +148,8 @@ h1{
     justify-content: center;
 
     padding: 1em;
+
+    font-size: 115%;
 }
 .final-words{
     display: flex;
@@ -153,6 +162,8 @@ h1{
     margin-top: 1em;
     padding: 2em;
     background-color:rgb(219, 230, 255);
+    
+    font-size: 150%;
 }
 .contact{
     display: flex;
@@ -166,15 +177,78 @@ h1{
     background: #000000c5;
     color: white;
 }
+.contact p{
+    border: white 3px solid;
+    padding: 1em;
+}
 
-@media (max-width: 600px){
+@media (max-width: 1300px){
     .announcement{
-        font-size: 75%;
+        font-size: 175%;
     }
     header{
-        flex-wrap: wrap-reverse;
+        flex-wrap: wrap;
     }
+    .displays img{
+        height: 10em;
+        width: 15em;
+    }
+}
+@media (max-width: 1000px){
     .pitch{
         flex-wrap: wrap-reverse;
+    }
+    .books{
+        max-width: 90%;
+        padding-left: 30%;
+    }
+}
+
+@media (min-width: 1000px){
+    .attn-grabber{
+        padding: 10%;
+    }
+    .intro{
+        max-width: 80%;
+    }
+    .displays img{
+        height: 15em;
+        width: 20em;
+    }
+    .books{
+        max-width: 35%;
+        min-width: 500px;
+        padding-left: 5em;
+        padding-right: 5em;
+    }
+    .truck{
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 600px){
+    .banner{
+        padding-top: 3em;   
+    }
+    h1{
+        font-size: 140%;
+    }
+    .banner i{
+        font-size: 120%;
+    }
+    .announcement{
+        font-size: 125%;
+    }
+    .attn-grabber, .display p, .final-words p{
+        font-size: 110%;
+    }
+    .pitch p{
+        font-size: 100%;
+    }
+    .pitch h2{
+        font-size: 120%;
+    }
+    .etc{
+        font-size: 90%;
     }
 }
