@@ -16,7 +16,7 @@ header{
 }
 h1{
     color: aliceblue;
-    font-size: 300%;
+    font-size: 250%;
 }
 
 /* img{          */
@@ -38,7 +38,7 @@ h1{
     padding-left: .5em;
     padding-right: .5em;
 
-    background: #262626d8;
+    background: #262626ea;
     color: rgb(119, 125, 211);
 }
 
@@ -56,25 +56,24 @@ h1{
 .attn-grabber{
     text-align: end;
     border-top: 1em double rgb(119, 125, 211);
-    padding-top: 1.5em;
-    font-size: 200%;
+    padding-top: 2em;
+    font-size: 125%;
 }
 .announcement{
     position: -webkit-sticky;
     position: sticky;
-    top: 0em;
+    top: .25em;
     width: 100%;
 
-    font-size: 1.1em;
+    font-size: 1em;
     letter-spacing: .15em;
 
-    text-align: end;
+    text-align: center;
     margin-top: .5em;
     margin-bottom: .5em;
 
     color: rgb(119, 125, 211);
     
-    font-size: 2em;
     padding-bottom: 1.5em;
 }
 .truck{
@@ -116,7 +115,7 @@ h1{
 .displays p{
     text-align: center;
     padding: 1em 0em;
-    font-size: 225%;
+    font-size: 155%;
 }
 
 .etc{
@@ -160,10 +159,11 @@ h1{
     text-align: center;
 
     margin-top: 1em;
+    margin-bottom: 2em;
     padding: 2em;
     background-color:rgb(219, 230, 255);
     
-    font-size: 150%;
+    font-size: 120%;
 }
 .contact{
     display: flex;
@@ -206,14 +206,17 @@ h1{
 
 @media (min-width: 1000px){
     .attn-grabber{
-        padding: 10%;
+        padding: 5%;
+    }
+    .truck{
+        width: 50%;
     }
     .intro{
         max-width: 80%;
     }
     .displays img{
-        height: 15em;
-        width: 20em;
+        height: 20em;
+        width: 25em;
     }
     .books{
         max-width: 35%;
